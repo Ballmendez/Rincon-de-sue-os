@@ -1,0 +1,84 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: logorincon;
+    src: url(./edwardianscriptitc.ttf);
+}
+
+@font-face {
+    font-family: desc;
+    src: url(./ShadowsIntoLight-Regular.ttf);
+}
+
+/* Estilos */
+h1{
+    font-size: 90px;
+    text-align: center;
+    color: hsl(221, 79%, 24%);
+    font-family: logorincon;
+}
+
+.logorincon{
+    height: auto;
+    width: 10vw;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+}
+
+.rrss{
+    height: auto;
+    width: 2vw;
+}
+
+.productosimg{
+    height: auto;
+    width: 20vw;
+    background-color: black;
+}
+
+.subtit{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: "desc", cursive;
+
+}
+
+body{
+    background-image: url(../img/tortafondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cat{
+    font-size: 60px;
+    color: white;
+}
+
+.redes{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(219, 157, 228);
+}
+
+li{
+    list-style: none;
+}
+
+.quienessomos{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: "desc", cursive; 
+}
