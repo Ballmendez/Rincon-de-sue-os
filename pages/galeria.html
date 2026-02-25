@@ -1,45 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
 
-        <!--css-->
+    <!--css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-    <style>
-    </style>
 </head>
+
 <body>
     <header>
-        <nav>
-            <a href="./quienes_somos.html">Conocernos mejor</a>
-            <a href="./productos.html">Ver nuestro catalogo</a>
-            <a href="./contacto.html">Contactarnos</a>
-            <a href="./galeria.html">Galeria</a>
-            <br>
-            <a href="../index.html">
-                <img src="../img/logo_rincon_de_sueños.png" alt="Logo de rincon de sueños" class="logorincon">
-            </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo_rincon_de_sueños.png" alt="Logo de Rincon de sueños" class="logorincon">
+                </a>
+                <h2 class="rinconletra">Rincon de Sueños</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="./quienes_somos.html">Quienes somos?<a>
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                                <a class="nav-link active" aria-current="page" href="./galeria.html">Galeria</a>
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <h1>Galeria</h1>
+        <h1 class="titulos">Galeria</h1>
     </header>
     <main>
-        <img src="../img/torta _hello_kitty.jpeg" alt="Torta tematica hello kitty" class="productosimg">
-        <img src="../img/torta_aladin.jpeg" alt="Torta tematica Aladin" class="productosimg">
-        <img src="../img/trabajos/pr.jpeg" alt="Paletas rectangulares de Toy story" class="productosimg">
-        <img src="../img/trabajos/ob.jpeg" alt="Oreos bañadas" class="productosimg">
-        <img src="../img/trabajos/ip.jpeg" alt="Icepops con flores" class="productosimg">
-        <img src="../img/trabajos/hp.jpeg" alt="Heartpops" class="productosimg">
-        <img src="../img/trabajos/ct.jpeg" alt="Cupcakes tematicos con flores" class="productosimg">
+        <article class="img-car">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/trabajos/cakepopsfnaf.jpeg" class="d-block w-100" alt="cakepops fnaf">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cakepopshotwheels.jpeg" class="d-block w-100"
+                            alt="cakepops hotwheels">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cakepopspersonajes.jpeg" class="d-block w-100"
+                            alt="cakepops personajes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/ccc.jpeg" class="d-block w-100" alt="cupcakes con crema">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cct.jpeg" class="d-block w-100" alt="cupcakes con toppers">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cd3d.jpeg" class="d-block w-100" alt="cookies decoradas 3d">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/chd.jpeg" class="d-block w-100" alt="chupelatines decorados">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/ckc.jpeg" class="d-block w-100" alt="cakepops letras">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/ckt.jpeg" class="d-block w-100" alt="cakepops tematicos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/coockiecorazon.jpeg" class="d-block w-100" alt="cookies corazon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cookieminion.jpeg" class="d-block w-100" alt="cookies minion">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cookieshotwheels.jpeg" class="d-block w-100" alt="cookies hotwheels">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/ct.jpeg" class="d-block w-100" alt="cupcakes tematicos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cupcakescrema.jpeg" class="d-block w-100" alt="cupcakes con crema">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cupcakesmariposas.jpeg" class="d-block w-100"
+                            alt="cupcakes mariposas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/cupcakesnegros.jpeg" class="d-block w-100" alt="cupcakes negros">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/hp.jpeg" class="d-block w-100" alt="heartpops">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/icepopminion.jpeg" class="d-block w-100" alt="icepopminions">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/icepopsenanos.jpeg" class="d-block w-100" alt="icepop de enanos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/icepopshadas.jpeg" class="d-block w-100" alt="icepop hadas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/ip.jpeg" class="d-block w-100" alt="icepops con flores">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/lettercake.jpeg" class="d-block w-100" alt="lettercake">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/numbercake.jpeg" class="d-block w-100" alt="numbercake">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/ob.jpeg" class="d-block w-100" alt="oreos bañadas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/oreoscomunion.jpeg" class="d-block w-100" alt="oreos para comumion">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/oreospelotas.jpeg" class="d-block w-100"
+                            alt="oreos con diseño de pelota">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/paletasanimales.jpeg" class="d-block w-100" alt="paletas de animales">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/paletasfnaf.jpeg" class="d-block w-100" alt="paletas fnaf">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/paletasminie.jpeg" class="d-block w-100" alt="paletas de minie mouse">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/pr.jpeg" class="d-block w-100" alt="paletas de toy story">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/tortaanimales.jpeg" class="d-block w-100" alt="torta de animales">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/tortacorazon.jpeg" class="d-block w-100" alt="torta de corazon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/tortaespacio.jpeg" class="d-block w-100" alt="torta de espacio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/trabajos/tortaverdeaguaflores.jpeg" class="d-block w-100"
+                            alt="torta decorada verde agua">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </article>
     </main>
     <footer>
-        <ul>
-            <nav class="redes">
-                <li>Whatsapp: <a href="https://wa.me/+541154036692/?text=Hola,%20te%20quería%20pedir%20un%20presupuesto%20para%20una%20torta%20de:%20" target="_blank"><img src="../img/whatsapp.png" alt="Logo de whatsapp" class="rrss"></a></li>
-                <li>Instagram: <a href="https://www.instagram.com/rincon_by_alejandrabistolfi/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram" class="rrss"></a></li>
-            </nav>
-        </ul>
+        <nav class="redes">
+            <ul class="listaredes">
+                <li>Whatsapp: <a
+                        href="https://wa.me/+541154036692/?text=Hola,%20te%20quería%20pedir%20un%20presupuesto%20para%20una%20torta%20de:%20"
+                        target="_blank"><img src="../img/whatsapp.png" alt="Logo de whatsapp" class="rrss"></a></li>
+                <li>Instagram: <a href="https://www.instagram.com/rincon_by_alejandrabistolfi/" target="_blank"><img
+                            src="../img/instagram.png" alt="Logo Instagram" class="rrss"></a></li>
+            </ul>
+        </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

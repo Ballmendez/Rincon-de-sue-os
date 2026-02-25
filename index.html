@@ -14,15 +14,26 @@
 
 <body>
     <header>
-        <nav>
-            <a href="./pages/quienes_somos.html">Conocernos mejor</a>
-            <a href="./pages/productos.html">Ver nuestro catalogo</a>
-            <a href="./pages/contacto.html">Contactarnos</a>
-            <a href="./pages/galeria.html">Galeria</a>
-            <br>
-            <a href="./index.html">
-                <img src="./img/logo_rincon_de_sueños.png" alt="Logo de rincon de sueños" class="logorincon">
-            </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/logo_rincon_de_sueños.png" alt="Logo de Rincon de sueños" class="logorincon">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link" href="./pages/quienes_somos.html">Quienes somos?<a>
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
         <h1>Rincón de Sueños</h1>
     </header>
@@ -31,7 +42,7 @@
     </main>
     <footer>
         <nav class="redes">
-            <ul>
+            <ul class="listaredes">
                 <li>Whatsapp: <a
                         href="https://wa.me/+541154036692/?text=Hola,%20te%20quería%20pedir%20un%20presupuesto%20para%20una%20torta%20de:%20"
                         target="_blank"><img src="./img/whatsapp.png" alt="Logo de whatsapp" class="rrss"></a></li>

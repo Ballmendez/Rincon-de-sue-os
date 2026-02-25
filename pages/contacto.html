@@ -6,25 +6,39 @@
     <title>Rincon de sueños - Contacto</title>
 
         <!--css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./quienes_somos.html">Conocernos mejor</a>
-            <a href="./productos.html">Ver nuestro catalogo</a>
-            <a href="./contacto.html">Contactarnos</a>
-            <a href="./galeria.html">Galeria</a>
-            <br>
-            <a href="../index.html">
-                <img src="../img/logo_rincon_de_sueños.png" alt="Logo de rincon de sueños" class="logorincon">
-            </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo_rincon_de_sueños.png" alt="Logo de Rincon de sueños" class="logorincon">
+                </a>
+                <h2 class="rinconletra">Rincon de Sueños</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="./quienes_somos.html">Quienes somos?<a>
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-    <h1>Contactanos!</h1>
+    <h1 class="titulos">Contactanos!</h1>
     </header>
     <main>
-        <h2>A traves de:</h2>
-            <ul>
+        <h2 class="contactospagina">A traves de:</h2>
+            <ul class="contactospagina">
                 <nav>
                     <li>Whatsapp: 
                         <a href="https://wa.me/+541154036692/?text=Hola,%20te%20quería%20pedir%20un%20presupuesto%20para%20una%20torta%20de:%20" target="_blank">
@@ -39,8 +53,8 @@
                 </nav>
             </ul>
         <section>
-            <h2>O recibi el presupuesto por mail:</h2>
-            <form action="./sumbit" method="post">
+            <h2 class="presupuestomail">O recibi el presupuesto por mail:</h2>
+            <form action="./sumbit" method="post" class="form">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Inserte nombre">
 
@@ -58,6 +72,9 @@
             </form>
         </section>
     </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
 
