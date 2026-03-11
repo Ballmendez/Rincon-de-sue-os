@@ -1,0 +1,21 @@
+@use "variables" as v;
+body{
+    main{
+        .img-car{
+            display: flex;
+            justify-content: center;
+        }
+        .carousel{
+            width: 30vw;
+            height: 30vw;
+        }
+    }
+    @include v.mobile{
+        main{
+            .carousel{
+                width: 70vw;
+                height: 70vw;
+            }
+        }
+    }
+}

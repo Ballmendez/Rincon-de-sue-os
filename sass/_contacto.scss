@@ -1,0 +1,19 @@
+main{
+    .contactospagina {
+        display: flex;
+        justify-content: center;
+    }
+    section{
+        .presupuestomail {
+            display: flex;
+            justify-content: center;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 10vw;
+            padding-left: 10vw;
+        }
+    }
+}

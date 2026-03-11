@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: logorincon;
+    src: url(../styles/edwardianscriptitc.ttf);
+}
+
+@font-face {
+    font-family: desc;
+    src: url(../styles/ShadowsIntoLight-Regular.ttf);
+}
+
+@mixin tablet{
+    @media (min-width: 426px) and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media (min-width: 300px) and (max-width: 425px){
+        @content;
+    }
+}
