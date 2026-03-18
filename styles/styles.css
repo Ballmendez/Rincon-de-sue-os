@@ -15,39 +15,142 @@
 body main .quienessomos {
   text-align: center;
   font-size: 2vw;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: "desc", cursive;
 }
 
 body main .productos {
   max-width: 1100px;
-  margin: 0 auto 60px auto;
+  margin: 5vw auto 60px auto;
   display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
 }
-body main .productosimg {
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-body main .productos article {
-  text-align: center;
-}
-body main .productos:has(article) {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-body main .productos h2 {
-  grid-column: 1/-1;
-  text-align: center;
-}
-body main .productosimg:hover {
-  scale: 1.3;
-  transition-duration: 0.5s;
+body main {
+  /*        .productosimg {
+             width: 100%;
+             max-width: 320px;
+             height: auto;
+             display: block;
+             margin: 0 auto;
+         }
+         .productos article {
+             text-align: center;
+         }
+         .productos:has(article) {
+             display: grid;
+             grid-template-columns: repeat(3, 1fr);
+             gap: 25px;
+         }
+         .productos h2 {
+             grid-column: 1 / -1;
+             text-align: center;
+         }
+         .productosimg:hover{
+             scale: 1.3;
+             transition-duration: 0.5s; */
+  /*         } */
 }
 
+body header .titulohome {
+  font-size: 10vw;
+  text-align: center;
+  color: hsl(311, 67%, 88%);
+  font-family: logorincon;
+  margin-top: 0vw;
+  padding: 5vw 0vw 5vw 0vw;
+  background-image: url(../img/tortafondo.png);
+  background-repeat: no-repeat;
+  background-size: width 100% height 100%;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+body main .subtit {
+  margin-top: 7vw;
+  color: black;
+  font-size: 4vw;
+}
+body main .btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 13vw;
+  margin-bottom: 14vw;
+  padding: 1vw 2vw;
+  font-size: 2vw;
+  color: white;
+  background-color: hsl(0, 0%, 0%);
+  border: none;
+  border-radius: 5px;
+}
+body main .btn:hover {
+  background-color: hsl(297, 23%, 66%);
+}
+body main .mision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  margin-top: 5vw;
+  margin: 9vw;
+  background-color: white;
+  padding: 3vw;
+}
+body main .mision .textomision {
+  font-size: 10vw;
+  max-width: 30vw;
+}
+body main .mision .misiontxt {
+  font-size: 3vw;
+  font-family: logorincon;
+}
+body main .mision .misionparrafo {
+  font-size: 1.5vw;
+  font-family: "desc", cursive;
+}
+body main .mision img {
+  display: block;
+  margin: 0 auto;
+  width: 30vw;
+  height: auto;
+}
+body main .vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  margin-top: 5vw;
+  margin: 9vw;
+  background-color: white;
+  padding: 3vw;
+}
+body main .vision .visiontxt {
+  font-size: 3vw;
+  font-family: logorincon;
+}
+body main .vision .textovision {
+  font-size: 10vw;
+  max-width: 30vw;
+}
+body main .vision .visionparrafo {
+  font-size: 1.5vw;
+  font-family: "desc", cursive;
+  grid-column: 1/2;
+}
+body main .vision img {
+  display: block;
+  margin: 0 auto;
+  width: 30vw;
+  height: auto;
+  grid-column: 2/3;
+}
+
+body header {
+  height: auto;
+}
 body header .navbar {
   position: sticky;
   top: 0;
@@ -66,6 +169,7 @@ body header .active {
 }
 
 body main .img-car {
+  margin-top: 2vw;
   display: flex;
   justify-content: center;
 }
@@ -84,7 +188,7 @@ footer .redes {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: none;
 }
 footer .listaredes {
   display: flex;
@@ -93,10 +197,7 @@ footer .listaredes {
   justify-content: center;
   padding: 5px;
   margin: 5px;
-}
-footer .rrss {
-  height: auto;
-  width: 2vw;
+  background-color: rgb(255, 255, 255);
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -128,11 +229,7 @@ main section .form {
 }
 
 body {
-  background-image: url(../img/tortafondo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-color: hsl(313, 58%, 87%);
 }
 
 a {
@@ -180,6 +277,12 @@ a {
 .rinconletra {
   font-family: logorincon;
   font-size: 3vw;
+}
+
+.rrss {
+  height: auto;
+  width: 2vw;
+  background-color: transparent;
 }
 
 @media (min-width: 300px) and (max-width: 425px) {

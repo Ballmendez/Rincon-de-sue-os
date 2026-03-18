@@ -4,7 +4,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: rgb(255, 255, 255);
+            background-color: none;
         }
         .listaredes {
             display: flex;
@@ -13,10 +13,7 @@
             justify-content: center;
             padding: 5px;
             margin: 5px;
-        }
-        .rrss {
-            height: auto;
-            width: 2vw;
+            background-color: rgb(255, 255, 255);
         }
     }
     @include v.tablet{

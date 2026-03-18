@@ -1,20 +1,26 @@
 @use "variables" as v;
-body{
-    header{
+
+body {
+    header {
+        height: auto;
+
         .navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
         }
+
         .logorincon {
             height: auto;
             width: 5vw;
         }
+
         .navbar-collapse {
             flex-grow: 0;
             flex-basis: 0;
         }
-        .active{
+
+        .active {
             font-weight: 500;
         }
     }
