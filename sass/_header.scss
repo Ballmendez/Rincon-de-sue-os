@@ -4,12 +4,6 @@ body {
     header {
         height: auto;
 
-        .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
         .logorincon {
             height: auto;
             width: 5vw;
@@ -22,6 +16,43 @@ body {
 
         .active {
             font-weight: 500;
+        }
+    }
+}
+
+@include v.tablet {
+
+    body {
+        header {
+            height: auto;
+
+            .logorincon {
+                height: auto;
+                width: 5vw;
+            }
+
+            .navbar-collapse {
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+@include v.mobile {
+    body {
+        header {
+            height: auto;
+
+            .logorincon {
+                height: auto;
+                width: 9vw;
+            }
+
+            .navbar-collapse {
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
         }
     }
 }

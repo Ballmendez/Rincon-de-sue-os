@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,14 +16,14 @@ $grisfondo: hsl(313, 58%, 87%);
     src: url(../styles/ShadowsIntoLight-Regular.ttf);
 }
 
-@mixin tablet{
-    @media (min-width: 426px) and (max-width: 768px){
+@mixin tablet {
+    @media (min-width: 426px) and (max-width: 768px) {
         @content;
     }
 }
 
-@mixin mobile{
-    @media (min-width: 300px) and (max-width: 425px){
+@mixin mobile {
+    @media (min-width: 300px) and (max-width: 425px) {
         @content;
     }
 }

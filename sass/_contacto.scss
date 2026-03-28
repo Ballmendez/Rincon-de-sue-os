@@ -1,19 +1,46 @@
-main{
+@use "variables" as v;
+
+main {
     .contactospagina {
         display: flex;
         justify-content: center;
     }
-    section{
-        .presupuestomail {
-            display: flex;
-            justify-content: center;
+
+    ul {
+        nav {
+            li {
+                a {
+                    background-color: transparent;
+                }
+            }
         }
+    }
+}
+
+section {
+    .presupuestomail {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        margin-bottom: 5vw;
+    }
+}
+
+@include v.mobile {
+    main {
+        .presupuestomail {
+            margin: 4vw;
+        }
+
         .form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-right: 10vw;
-            padding-left: 10vw;
+            margin-bottom: 20vw;
         }
     }
 }

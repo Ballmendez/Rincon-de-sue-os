@@ -1,21 +1,77 @@
 @use "variables" as v;
-body{
-    main{
-        .img-car{
-            margin-top: 2vw;
-            display: flex;
+
+body {
+    main {
+        .diviciongaleria {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             justify-content: center;
-        }
-        .carousel{
-            width: 30vw;
-            height: 30vw;
+            text-align: center;
+            margin: 2vw;
+            font-size: 2vw;
+            font-family: 'Lucida Sans' sans-serif;
+
+            .textogaleriaizq {
+                grid-column: 1/2;
+                margin: 2vw;
+                align-content: center;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .textogaleriader {
+                grid-column: 3/4;
+                margin: 2vw;
+                align-content: center;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .img-car {
+                margin-top: 0vw;
+                display: flex;
+                justify-content: center;
+            }
+
+            .carousel {
+                width: 30vw;
+                height: 30vw;
+            }
         }
     }
-    @include v.mobile{
-        main{
-            .carousel{
-                width: 70vw;
-                height: 70vw;
+
+    @include v.tablet {
+        main {
+            .diviciongaleria {
+                .carousel {
+                    width: 40vw;
+                    height: 40vw;
+                }
+            }
+        }
+    }
+
+    @include v.mobile {
+        main {
+            .diviciongaleria {
+                display: block;
+                text-align: center;
+
+                .carousel {
+                    width: 70vw;
+                    height: 70vw;
+                }
+
+                .textogaleriaizq {
+                    margin: 5vw auto;
+                    background-color: white;
+                    padding: 5vw;
+                }
+
+                .textogaleriader {
+                    margin: 5vw auto;
+                    background-color: white;
+                    padding: 5vw;
+                    margin-bottom: 20vw;
+                }
             }
         }
     }

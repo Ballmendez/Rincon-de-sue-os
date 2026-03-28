@@ -12,13 +12,65 @@
   font-family: desc;
   src: url(../styles/ShadowsIntoLight-Regular.ttf);
 }
+body main .quienessomossection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
 body main .quienessomos {
+  max-width: 60vw;
+  margin: 5vw;
+  background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 2vw;
   color: rgb(0, 0, 0);
   font-family: "desc", cursive;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+body main .imgquienessomos {
+  padding: 2vw;
+  background-color: white;
+  width: auto;
+  height: 35vw;
+  margin: 3vw;
+}
+body main .imgquienessomos .textoquienes {
+  grid: 1/2;
+}
+body main .imgquienessomos .imgquienes {
+  grid: 2/3;
 }
 
+@media (min-width: 300px) and (max-width: 425px) {
+  body main .quienessomossection {
+    display: block;
+  }
+  body main .quienessomos {
+    max-width: 90vw;
+    margin: 5vw auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(0, 0, 0);
+    font-family: "desc", cursive;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+  body main .imgquienessomos {
+    padding: 5vw;
+    background-color: white;
+    width: 100vw;
+    height: auto;
+    margin: 3vw auto;
+  }
+  body main .imgquienessomos .textoquienes {
+    grid: 1/2;
+  }
+  body main .imgquienessomos .imgquienes {
+    grid: 1/2;
+  }
+}
 body main .productos {
   max-width: 1100px;
   margin: 5vw auto 60px auto;
@@ -27,31 +79,6 @@ body main .productos {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5vw;
-}
-body main {
-  /*        .productosimg {
-             width: 100%;
-             max-width: 320px;
-             height: auto;
-             display: block;
-             margin: 0 auto;
-         }
-         .productos article {
-             text-align: center;
-         }
-         .productos:has(article) {
-             display: grid;
-             grid-template-columns: repeat(3, 1fr);
-             gap: 25px;
-         }
-         .productos h2 {
-             grid-column: 1 / -1;
-             text-align: center;
-         }
-         .productosimg:hover{
-             scale: 1.3;
-             transition-duration: 0.5s; */
-  /*         } */
 }
 
 body header .titulohome {
@@ -148,13 +175,125 @@ body main .vision img {
   grid-column: 2/3;
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  body header .titulohome {
+    font-size: 15vw;
+    margin-top: 0vw;
+    padding: 5vw 0vw 5vw 0vw;
+  }
+  body main .btn {
+    margin-top: 10vw;
+    margin-bottom: 12vw;
+    font-size: 3vw;
+  }
+  body main .mision .misionparrafo {
+    font-size: 3vw;
+    font-family: "desc", cursive;
+  }
+  body main .mision .textomision {
+    font-size: 15vw;
+    max-width: 30vw;
+  }
+  body main .mision .misiontxt {
+    font-size: 7vw;
+    font-family: logorincon;
+  }
+  body main .vision .visionparrafo {
+    font-size: 3vw;
+    font-family: "desc", cursive;
+  }
+  body main .vision .textovision {
+    font-size: 15vw;
+    max-width: 30vw;
+  }
+  body main .vision .visiontxt {
+    font-size: 7vw;
+    font-family: logorincon;
+  }
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  body header .titulohome {
+    font-size: 20vw;
+    margin-top: 0vw;
+    padding: 5vw 0vw 5vw 0vw;
+  }
+  body main .subtit {
+    margin-top: 7vw;
+    color: black;
+    font-size: 8vw;
+  }
+  body main .btn {
+    margin-top: 10vw;
+    margin-bottom: 12vw;
+    font-size: 5vw;
+  }
+  body main .mision {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 5vw;
+    margin: 9vw;
+    background-color: white;
+    padding: 3vw;
+  }
+  body main .mision .misionparrafo {
+    font-size: 6vw;
+    font-family: "desc", cursive;
+    grid-row: 2/3;
+  }
+  body main .mision .textomision {
+    font-size: 15vw;
+    max-width: 100%;
+    grid-row: 2/3;
+  }
+  body main .mision .misiontxt {
+    font-size: 10vw;
+    font-family: logorincon;
+    grid-row: 2/3;
+  }
+  body main .mision img {
+    width: 100%;
+    height: auto;
+    grid-row: 1/2;
+  }
+  body main .vision {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 5vw;
+    margin: 9vw;
+    background-color: white;
+    padding: 3vw;
+  }
+  body main .vision div {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  body main .vision .visionparrafo {
+    font-size: 6vw;
+  }
+  body main .vision .textovision {
+    font-size: 15vw;
+    max-width: 100%;
+  }
+  body main .vision .visiontxt {
+    font-size: 10vw;
+  }
+  body main .vision img {
+    width: 100%;
+    height: auto;
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+}
 body header {
   height: auto;
-}
-body header .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 body header .logorincon {
   height: auto;
@@ -168,66 +307,175 @@ body header .active {
   font-weight: 500;
 }
 
-body main .img-car {
-  margin-top: 2vw;
+@media (min-width: 426px) and (max-width: 768px) {
+  body header {
+    height: auto;
+  }
+  body header .logorincon {
+    height: auto;
+    width: 5vw;
+  }
+  body header .navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 300px) and (max-width: 425px) {
+  body header {
+    height: auto;
+  }
+  body header .logorincon {
+    height: auto;
+    width: 9vw;
+  }
+  body header .navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+}
+body main .diviciongaleria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  margin: 2vw;
+  font-size: 2vw;
+  font-family: "Lucida Sans" sans-serif;
+}
+body main .diviciongaleria .textogaleriaizq {
+  grid-column: 1/2;
+  margin: 2vw;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+}
+body main .diviciongaleria .textogaleriader {
+  grid-column: 3/4;
+  margin: 2vw;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+}
+body main .diviciongaleria .img-car {
+  margin-top: 0vw;
   display: flex;
   justify-content: center;
 }
-body main .carousel {
+body main .diviciongaleria .carousel {
   width: 30vw;
   height: 30vw;
 }
+@media (min-width: 426px) and (max-width: 768px) {
+  body main .diviciongaleria .carousel {
+    width: 40vw;
+    height: 40vw;
+  }
+}
 @media (min-width: 300px) and (max-width: 425px) {
-  body main .carousel {
+  body main .diviciongaleria {
+    display: block;
+    text-align: center;
+  }
+  body main .diviciongaleria .carousel {
     width: 70vw;
     height: 70vw;
   }
+  body main .diviciongaleria .textogaleriaizq {
+    margin: 5vw auto;
+    background-color: white;
+    padding: 5vw;
+  }
+  body main .diviciongaleria .textogaleriader {
+    margin: 5vw auto;
+    background-color: white;
+    padding: 5vw;
+    margin-bottom: 20vw;
+  }
 }
 
-footer .redes {
+footer {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: none;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4vw;
+  background-color: rgb(0, 0, 0);
+}
+footer a {
+  background-color: transparent;
+}
+footer p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  color: white;
+}
+footer .whatsfoot {
+  margin: 10px;
+  color: white;
+}
+footer .igfoot {
+  margin: 10px;
+  color: white;
 }
 footer .listaredes {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  margin: 5px;
-  background-color: rgb(255, 255, 255);
+  margin: 10px;
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-  .rrss {
+  a .rrss {
     height: 4vw;
     width: auto;
   }
+  footer {
+    height: 6vw;
+  }
 }
-@media (min-width: 426px) and (max-width: 768px) and (min-width: 300px) and (max-width: 425px) {
-  .rrss {
-    height: 7vw;
+@media (min-width: 300px) and (max-width: 425px) {
+  a .rrss {
+    height: 6vw;
     width: auto;
+  }
+  footer {
+    height: 16vw;
   }
 }
 main .contactospagina {
   display: flex;
   justify-content: center;
 }
-main section .presupuestomail {
+main ul nav li a {
+  background-color: transparent;
+}
+
+section .presupuestomail {
   display: flex;
   justify-content: center;
 }
-main section .form {
+section .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 10vw;
   padding-left: 10vw;
+  margin-bottom: 5vw;
 }
 
+@media (min-width: 300px) and (max-width: 425px) {
+  main .presupuestomail {
+    margin: 4vw;
+  }
+  main .form {
+    margin-bottom: 20vw;
+  }
+}
 body {
   background-color: hsl(313, 58%, 87%);
 }
@@ -256,7 +504,7 @@ h1 {
   text-align: center;
   color: hsl(221, 79%, 24%);
   font-family: logorincon;
-  margin-top: vw;
+  margin-top: 2vw;
 }
 
 a {
@@ -271,7 +519,7 @@ a {
   text-align: center;
   color: hsl(221, 79%, 24%);
   font-family: logorincon;
-  margin-top: 4vw;
+  margin-top: 2vw;
 }
 
 .rinconletra {
